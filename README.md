@@ -57,24 +57,3 @@ Follow these instructions to set up your environment and reproduce the analysis.
     source venv/bin/activate  # On Linux/macOS
     # .\venv\Scripts\activate  # On Windows
     ```
-
-3.  **Install the necessary packages:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-    *(Ensure a `requirements.txt` file listing dependencies like `pandas`, `numpy`, and `scikit-learn` is included in your repository.)*
-
----
-
-## Usage
-
-The primary workflow involves data preparation, model training, and evaluation. Key scripts or notebooks in the repository may include:
-
-1.  **`1_data_prep.py` / `data_prep.ipynb`**: Scripts for downloading, cleaning, and merging the TROPESS and fossil fuel consumption data.
-2.  **`2_modeling_linear.py` / `linear_models.ipynb`**: Implementation of baseline linear regression models.
-3.  **`3_modeling_advanced.py` / `advanced_models.ipynb`**: Implementation of the high-performing non-linear machine learning models.
-
-**To run the final, most accurate model:**
-
-```bash
-python 3_modeling_advanced.py
